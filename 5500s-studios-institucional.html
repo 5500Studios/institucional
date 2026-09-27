@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>5500's Studios</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0E1210; --surface: #171D1A; --text: #EAE7E0; --muted: #9BA39C;
+    --accent: #45D9A0; --rule: #2A322E;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #F4F2EC; --surface: #FFFFFF; --text: #1B211D; --muted: #5C645E;
+      --accent: #1E8F6A; --rule: #DDD9CE;
+    }
+  }
+  :root[data-theme="dark"] { --bg:#0E1210; --surface:#171D1A; --text:#EAE7E0; --muted:#9BA39C; --accent:#45D9A0; --rule:#2A322E; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:"Source Sans 3",-apple-system,"Segoe UI",sans-serif; line-height:1.65; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width: 720px; margin:0 auto; padding: 4.5rem 1.5rem 5rem; }
+
+  .mark { display:flex; align-items:baseline; gap:0.5rem; margin-bottom: 2.6rem; }
+  .mark .num { font-family:"Fraunces",Georgia,serif; font-weight:600; font-size:2.4rem; color:var(--accent); letter-spacing:-0.02em; }
+  .mark .suffix { font-size:1.1rem; color:var(--muted); }
+
+  h1 { font-family:"Fraunces",Georgia,serif; font-weight:500; font-size:clamp(2rem,6.5vw,2.8rem); line-height:1.12; letter-spacing:-0.01em; margin:0 0 1rem; max-width:18ch; }
+  .lede { font-size:1.08rem; color:var(--muted); max-width:52ch; margin:0 0 3rem; padding-bottom:2.6rem; border-bottom:1px solid var(--rule); }
+
+  h2 { font-family:"Fraunces",Georgia,serif; font-weight:500; font-size:1.3rem; margin: 2.6rem 0 0.9rem; }
+  p { font-size:1.02rem; max-width:62ch; margin:0 0 1.2rem; }
+
+  .facts { display:grid; grid-template-columns: 1fr 1fr; gap:1.4rem; margin: 2.4rem 0 3rem; }
+  .facts .item { padding: 1.1rem 1.3rem; background:var(--surface); border-radius:4px; }
+  .facts .item .label { font-size:0.85rem; color:var(--muted); margin-bottom:0.3rem; }
+  .facts .item .value { font-size:1.02rem; }
+
+  .project { display:flex; gap:1rem; align-items:flex-start; padding: 1.3rem 0; border-top:1px solid var(--rule); }
+  .project:last-child { border-bottom:1px solid var(--rule); }
+  .project .dot { width:0.5rem; height:0.5rem; border-radius:50%; background:var(--accent); margin-top:0.55rem; flex-shrink:0; }
+  .project h3 { font-family:"Fraunces",Georgia,serif; font-weight:500; font-size:1.05rem; margin:0 0 0.3rem; }
+  .project p { margin:0; font-size:0.98rem; color:var(--muted); }
+
+  footer { margin-top:3.5rem; padding-top:1.8rem; border-top:1px solid var(--rule); font-size:0.9rem; color:var(--muted); }
+  footer a { color: var(--accent); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark"><span class="num">5500&rsquo;s Studios</span><span class="suffix">Institucional</span></div>
+
+  <h1>Tecnología y videojuegos hechos con intención</h1>
+  <p class="lede">Estudio independiente fundado en 2025 por Santino, enfocado en el desarrollo de videojuegos, principalmente en el ecosistema de Roblox, y en la creación de experiencias digitales que combinan jugabilidad, diseño y tecnología.</p>
+
+  <div class="facts">
+    <div class="item"><div class="label">Fundado</div><div class="value">2025</div></div>
+    <div class="item"><div class="label">Sede</div><div class="value">Independiente</div></div>
+    <div class="item"><div class="label">Fundador</div><div class="value">Santino</div></div>
+    <div class="item"><div class="label">IA del estudio</div><div class="value">Viz</div></div>
+  </div>
+
+  <h2>Qué hacemos</h2>
+  <p>Desarrollamos videojuegos y experiencias interactivas, con foco en Roblox, además de proyectos vinculados a sitios web, software, inteligencia artificial y diseño digital. Buscamos transformar ideas en experiencias concretas, combinando creatividad y tecnología.</p>
+
+  <h2>Proyectos</h2>
+  <div class="project">
+    <span class="dot"></span>
+    <div>
+      <h3>Call of Blox</h3>
+      <p>Experiencia de acción desarrollada en Roblox.</p>
+    </div>
+  </div>
+  <div class="project">
+    <span class="dot"></span>
+    <div>
+      <h3>Iniciativas educativas con Escuelas Verdes</h3>
+      <p>Juegos y experiencias web desarrolladas para actividades de educación ambiental en escuelas.</p>
+    </div>
+  </div>
+
+  <h2>Próximos proyectos</h2>
+  <div class="project">
+    <span class="dot"></span>
+    <div>
+      <h3>SHOOTING ARENA**</h3>
+      <p>Nuevo juego en desarrollo para Roblox.</p>
+    </div>
+  </div>
+  <div class="project">
+    <span class="dot"></span>
+    <div>
+      <h3>Más colaboraciones intercolegiales con Escuelas Verdes</h3>
+      <p>Nuevas actividades educativas entre distintas escuelas, en línea con las ediciones anteriores del programa.</p>
+    </div>
+  </div>
+  <div class="project">
+    <span class="dot"></span>
+    <div>
+      <h3>Viz Learn</h3>
+      <p>Versión de Viz, la IA del estudio, pensada para estudiar, aprender y resolver dudas.</p>
+    </div>
+  </div>
+
+  <footer>5500&rsquo;s Studios &middot; fundado por Santino</footer>
+</div>
+</body>
+</html>
